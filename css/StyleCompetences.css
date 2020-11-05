@@ -1,0 +1,39 @@
+.Connaissance{
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    /*outline: 1px solid red; contour*/
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .flex-item {
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em;
+    flex: 1 1 auto;
+    outline: 1px solid blue;
+    height: 8em;  
+}
+
+.flex-item h1{
+    font-size: 1em;
+}
+
+.flex-item p{
+    font-size: 0.5em;
+}
+
+.ConnaissanceAcquis p {
+    font-size: 0.8em;
+}

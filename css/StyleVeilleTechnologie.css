@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    min-height: 200px;
+    background-color:cornflowerblue;
+    opacity: 15%;
+    text-align: center;
+    color:black;
+    font-weight: bolder;
+    
+
+  }
+
+  h2{
+      font-size: 3em;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
