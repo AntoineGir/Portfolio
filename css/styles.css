@@ -3,7 +3,14 @@
 :root {
   --main-white-color: #f2f2f2;
   --main-black-color: black;
-  --main-purple-color: #9e89b8;
+}
+
+body {
+  font: 16px/1.5 "Dosis", sans-serif;
+  background: linear-gradient(#15002F, #8D78A7);
+  /*IE FIX*/
+  /*display: flex;
+  flex-direction: column;*/
 }
 
 * {
@@ -23,13 +30,17 @@ a {
   text-shadow: red 1px 1px;
 }
 
-body {
-  font: 16px/1.5 "Dosis", sans-serif;
-  background: linear-gradient(#15002F, #8D78A7);
-  /*IE FIX*/
-  /*display: flex;
-  flex-direction: column;*/
+
+/*MAIN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.img_profil {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 80%;
 }
+
 
 /* CONTAINER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
