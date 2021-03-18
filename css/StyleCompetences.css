@@ -10,7 +10,6 @@
   }
   
   .flex-container {
-    /*outline: 1px solid red; contour*/
     display: flex;
     justify-content: space-around;
   }
