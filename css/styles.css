@@ -6,17 +6,13 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
   font: 16px/1.5 "Dosis", sans-serif;
-  background: linear-gradient(#15002F, #8D78A7);
+  background: #15002F;
   /*IE FIX*/
   /*display: flex;
   flex-direction: column;*/
-}
-
-* {
-
-  margin: 0;
-  box-sizing: border-box;
 }
 
 ul {
@@ -27,36 +23,12 @@ a {
   text-decoration: none;
   color: inherit;
   font-weight: bolder;
-  text-shadow: red 1px 1px;
 }
 
 
 /*MAIN
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.img_profil {
-  width: 30%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 80%;
-}
 
-
-/* CONTAINER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.wrapper > * {
-  padding: 20px;
-}
-
-
-/* HEADER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-header {
   background: var(--main-white-color);
 }
@@ -81,19 +53,145 @@ a {
 .page-header .cta-contact {
   font-family: inherit;
   font-size: 1.2rem;
-  padding: 5px 18px;
   border: 1px solid;
   border-radius: 5px;
 }
-/* MQ
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@media screen and (min-width: 550px) {
-  .page-header ul {
-    width: auto;
-    margin-top: 0;
+
+.presentation{
+  display: flex;
+  justify-content: center;
+}
+
+.item{
+  margin: 3.5%;
+  background: black;
+  border-radius: 2.5em;
+  width: 50%;
+  padding: 1%;
+}
+
+.conteneur
+{
+  display: flex;
+  /*flex-wrap: nowrap;*/
+  flex-direction: column;
+    text-align: center;
+}
+
+.img_profil {
+  width: 30%;
+  clip-path:circle(42%);
+}
+
+.element:nth-child(2)
+{
+  line-height: 1em;
+  color: white;
+}
+
+
+.element:nth-child(2) h1{
+  font-size: 3em;
+}
+
+.text {
+  text-align: center;
+  padding: 0 10%;
+  color: white;
+}
+
+.text p{
+  font-style: oblique;
+  font-size: 1em;
+}
+
+.button {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button a{
+  background: blueviolet;
+  color: white;
+  padding: 2%;
+  text-align: center;
+  display: table;
+  cursor: pointer;
+  border-radius: 2em;
+}
+
+
+/* Competences */ 
+
+.card {
+  background-color: black;
+  text-align: center;
+  color: white;
+  border-radius: 2em;
+}
+  @media (min-width: 1000px) {
+    .card 
+    {
+      width:25%;
+    }
+
+    .cards 
+    {
+      margin-top: 5%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly ;
+      flex-flow: wrap ;
+    }
   }
 
-  .page-header .cta-contact {
-    order: 1;
+  @media (max-width: 1000px)
+  {
+    .card
+    {
+      margin: 5%;
+      background-color: black;
+      display: grid;
+    }
+
+  .cards{
+    margin-top: 5%;
   }
+}
+
+
+.content li{
+  display: list-item;
+  list-style: none;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Realisation */
+
+
+.flex-container {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item {
+  background: rgb(26, 25, 25);
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5em;
+  flex: 1 1 auto;
+  height: 13em;  
+  color : white;
+  border-radius: 2em;
+  width: 50%;
+}
+
+
+flex-container h1{
+  font-size: 0.5em;
+}

@@ -1,5 +1,4 @@
-/* MAIN
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
 .page-main {
   display: flex;
   align-items: center;
@@ -13,7 +12,7 @@
 }
 
 .page-main h1 {
-  font-size: 3em;
+  font-size: 2 em;
   color: antiquewhite;
 
 }
@@ -36,9 +35,6 @@
 .page-main h6{
   font-size: 1em;
 }
-/* MQ
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 
   .page-footer {
     flex-direction: row;

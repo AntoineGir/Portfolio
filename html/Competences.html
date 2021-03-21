@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/StyleCompetences.css">
 </head>
 <body>
     <div class="wrapper">
@@ -14,70 +13,64 @@
           <nav>
             <ul>
               <li>
-                <a href="..\index.html">Acceuil</a>
+                <a href="../index.html">Acceuil</a>
               </li>
               <li>
-                <a href="Competences.html">Competences</a>
+                <a href="../html/Competences.html">Competences</a>
               </li>
               <li>
-                <a href="Realisation.html">Réalisations</a>
+                <a href="../html/Realisation.html">Réalisations</a>
               </li>
               <li>
-                <a href="VeilleTechnologie.html">Veille technologie</a>
+                <a href="../html/VeilleTechnologie.html">Veille technologie</a>
               </li>
               <li>
-                <a href="Contact.html">Contact</a>
+                <a href="../html/Contact.html">Contact</a>
               </li>
             </ul>
           </nav>
-        </header>
-        
+        </header>  
         <main class="page-main">
-            <div class="Connaissance">
-              <h1>Language Informatique</h1>
-              <div class="flex-container">
-                <div class="flex-item flex-item-1">
-                  <h1>HTML, CSS et JS</h1>
-                  <br>
-                  <p>Notion de base, pour la création de site web.</p>
+            <div class="cards">
+              <article class="card">
+                  <header>
+                    <h2>Language de programmation</h2>
+                  </header>
+                  <div class="content">
+                    <ul>
+                      <li>HMTML, CSS</li>
+                      <li>JS</li>
+                      <li>PHP</li>
+                      <li>C#</li>
+                      <li>SQL</li>
+                    </ul>
+                  </div>
+              </article>
+              <article class="card">
+                <header>
+                  <h2>FrameWork</h2>
+                </header>
+                <div class="content">
+                  <ul>
+                    <li>Symfony</li>
+                    <li>Bootstrap</li>
+                  </ul>
                 </div>
-                <div class="flex-item flex-item-2">
-                  <h1>C#</h1>
-                  <br>
-                  <p>Notion : </p>
-                  <p>-Création d'application wpf</p>
-                  <p>-Création de classe</p>
-                  <p>-Connexion entre une application et une base de donnée</p>
-                </div>
-                <div class="flex-item flex-item-3">
-                  <h1>PHP</h1>
-                  <br>
-                  <p>Notion :</p>
-                  <p>-création de classe</p>
-                  <p>-création de formulaire</p>
-                  <p></p>  
-                </div>
-                <div class="flex-item flex-item-4">
-                  <h1>SQL</h1>
-                  <br>
-                  <p>Notion :</p>
-                  <p>-Création d'une base de donnée</p>
-                  <p>-Création de requete sql</p>
-                  <p>-Insertion de données</p>
-                  <p></p>
+            </article>
 
-                </div>
+            <article class="card">
+              <header>
+                <h2>Logiciel</h2>
+              </header>
+              <div class="content">
+                <ul>
+                  <li>MySQL Workbench</li>
+                  <li>visual studio code</li>
+                  <li>PhpStorm</li>
+                </ul>
               </div>
-            </div>
-            <div class="Connaissance">
-              <h1>Connaissance :</h1>
+            </article>
 
-              <ul class="ConnaissanceAcquis">
-                <li><p>-Etablir un cahier des charges et un planing.</p></li>
-                <li><p>-Définir les étapes, les moyens humains, matériels et financiers d'un projet(Méthode Classique/Méthode AGILE)</p></li>
-                <li><p>-Conception et réalisation d'application</p></li>
-              </ul>
-            </div>
 
         </main>
       </div>
