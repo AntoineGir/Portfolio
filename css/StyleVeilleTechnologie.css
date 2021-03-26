@@ -2,8 +2,6 @@
     box-sizing: border-box;
   }
 
-  html {
-  }
   
   /* Create two equal columns that floats next to each other */
   .column {
@@ -11,22 +9,22 @@
     width: 50%;
     padding: 10px;
     min-height: 200px;
-    background-color:cornflowerblue;
-    opacity: 15%;
-    text-align: center;
-    color:black;
+    /*background-color:cornflowerblue;
+    opacity: 15%;*/
+
     font-weight: bolder;
+    color: whitesmoke;
     
 
   }
 
   h2{
+      text-align: center;
       font-size: 3em;
   }
   
   /* Clear floats after the columns */
   .row:after {
-    content: "";
     display: table;
     clear: both;
   }
