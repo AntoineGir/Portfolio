@@ -1,0 +1,284 @@
+html, body, .grid-container { height: 100vh; margin: 0; padding: 0;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+
+/*
+* navbar
+*/
+nav ul {
+    list-style: none;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+  }
+   
+  .nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+    transition: .3s color;
+  }
+   
+  .nav a:hover {
+    color: red;
+    font-style:unset;
+  }
+   
+  .nav a.active {
+    background-color: #fff;
+    color: #444;
+    cursor: default;
+  }
+  /*
+  *fin navbar
+  */
+
+  /* 
+  *top 
+  */
+
+  .top {
+      display: flex;
+      justify-content: center;
+      height: 60%;
+      
+  }
+
+  .center {
+    background-color: whitesmoke;
+    height: 40%;
+    border-radius:1rem;
+	  margin: auto;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .content {
+    flex-basis: 50%;
+    display: inline-block;
+    vertical-align: center;
+
+  }
+
+  .text{
+    font-size: 1em;
+    font-weight: bolder;
+      margin-top: 5%;
+  }
+
+  .image{
+      text-align: center;
+  }
+
+  .img_profil {
+    clip-path:circle(42%);
+    width: 70%;
+  }
+
+  .social{
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+.apropos{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.propos {
+  border-radius: 1em;
+  margin: 0;
+  background-color:rgb(255, 248, 235);
+  width: 50%;
+}
+
+.propos p{
+  font-size: 1.2em;
+
+}
+
+.competence {
+  height: 120vh;
+  width: 100%;
+
+}
+
+.competence h1{
+  text-align: center;
+  font-size: 4em;
+}
+
+.containerCompetence{
+  display: flex;
+  flex-direction: column;
+}
+
+.language h2{
+  font-size: 3em;
+  text-align: center;
+}
+
+.languages {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cards {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 2/3;
+  height: 40vh;
+  width: 25vh;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.ContainerCard{
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.ContainerCard img{
+  padding: 5px;
+}
+
+.outil h2{
+  font-size: 3em;
+  text-align: center;
+}
+
+.outils {
+  display: flex;
+  justify-content: space-around;
+}
+
+.parcour h2{
+  text-align: center;
+  font-size: 3em;
+}
+
+.scolaires{
+  border-radius: 1em;
+  background-color: whitesmoke;
+  padding: 12px;
+  margin: 1% auto;
+  display: flex;
+  justify-content: center;
+  width: 65%;
+}
+
+.ecole {
+  flex-basis: 40%;
+  display: inline-block;
+  vertical-align: center;
+  text-align: left;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  flex-basis: 60%;
+  display: inline-block;
+  vertical-align: center;
+  margin: auto;
+}
+
+.containerScolaire h2 {
+  text-align: center;
+}
+
+.VeilleTechno{
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.containerVT{
+  flex-basis: 50%;
+  display: inline-block;
+  vertical-align: center;
+  text-align: center;
+}
+
+.containerVT h3{
+  text-align: center;
+  font-size: 2em;
+}
+
+.containerVT h4 {
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+.containerVT h5 {
+  text-align: center;
+  font-size: 1em;
+  list-style: none;
+}
+
+.outils {
+  display: flex;
+}
+
+.outilVeille{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.outilsVeille h5{
+  font-size: 2em;
+  margin: 0;
+
+}
+
+.outilsVeille li {
+  margin: 5%;
+}
+
+.outilsVeille{
+  display : flex;
+  flex-direction: column;
+  background-color: wheat;
+  width: 50%;
+  margin: 0;
+
+}
+
+.text h5{
+  font-size: 1em;
+  align-self: center;
+}
+
+.entredeux{
+  background-color: whitesmoke;
+  height: 5%;
+}
+
+
+.titre{
+  text-align: center;
+  font-size: 3em;
+}

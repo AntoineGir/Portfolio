@@ -1,64 +1,373 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
+    <head>
+        <title>PortFolio_AntoineGirard</title>
+        <meta description="PoortFiolio d'Antoine Girard">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>  
+    </head>
+    <body>
+    <header>
+        <nav class="nav" style="position: fixed; width: 100%;">
+            <ul>
+                <li><a href="#aPropos">A propos</a></li>
+                <li><a href="#Competances">Competances</a> </li>
+                <li><a href="#realisation">Parcours scolaire</a></li>
+                <li><a href="#realisation">Projets</a></li>
+                <li><a href="#veilleTechnologie">Veille Technologie</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<head>
-  <meta charset="UTF-8">
-  <title>PortFolio_AntoineGirard</title>
-  <meta description="PortFolio Antoine Girard">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header class="page-header">
-    <nav>
-      <ul>
-        <li>
-          <a href="">Acceuil</a>
-        </li>
-        <li>
-          <a href="./html/Competences.html">Competences</a>
-        </li>
-        <li>
-          <a href="./html/Realisation.html">Réalisations</a>
-        </li>
-        <li>
-          <a href="./html/VeilleTechnologie.html">Veille technologie</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="page-main">
-    <div class="presentation">
-      <div class="item">
-        <div class="conteneur">
-          <div class="element 1">      
-            <img class="img_profil" src="image/profil3.jpg">
-          </div>
-          <div class="element 2">
-            <h1><strong>Antoine Girard</strong> </h1>
-            <h2>Developpeur</h2>
-          </div>
-        </div>
-        <div class="text">
-          <p>
-            Soif de découverte
-            <p>
-            par ce PortFolio, vous allez pouvoir découvrir mes compétences,
-            mon parcours ainsi que mes principaux projets que j'ai fais. 
-          </p>
-        </div>
-        <div>
-          <div class="button">
-            <div>
-              <a href="doc/CV_de_GIRARD_Antoine.pdf" target="_blank" >Curriculum vitæ</a>
+    <div class="top">
+        <div class="center">
+            <div class="content">
+                <div class="image">
+                    <img class="img_profil" src="./image/profil.jpg">
+                </div>
+                <div class="social">
+                            <a href="https://github.com/AntoineGir">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                            <a href="#">
+                                <svg id="clickMe" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+                            </a>
+                            <a href="./document/CV_de_GIRARD_Antoine.pdf">
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M3 24h19v-23h-1v22h-18v1zm17-24h-18v22h18v-22zm-1 1h-16v20h16v-20zm-2 16h-12v1h12v-1zm0-3h-12v1h12v-1zm0-3h-12v1h12v-1zm-7.348-3.863l.948.3c-.145.529-.387.922-.725 1.178-.338.257-.767.385-1.287.385-.643 0-1.171-.22-1.585-.659-.414-.439-.621-1.04-.621-1.802 0-.806.208-1.432.624-1.878.416-.446.963-.669 1.642-.669.592 0 1.073.175 1.443.525.221.207.386.505.496.892l-.968.231c-.057-.251-.177-.449-.358-.594-.182-.146-.403-.218-.663-.218-.359 0-.65.129-.874.386-.223.258-.335.675-.335 1.252 0 .613.11 1.049.331 1.308.22.26.506.39.858.39.26 0 .484-.082.671-.248.187-.165.322-.425.403-.779zm3.023 1.78l-1.731-4.842h1.06l1.226 3.584 1.186-3.584h1.037l-1.734 4.842h-1.044z"/></svg>
+                            </a>
+                            <a href="./document/tableau_synthese_Girard_Antoine.pdf">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 2v20h-20v-20h20zm2-2h-24v24h24v-24zm-4 7h-8v1h8v-1zm0 5h-8v1h8v-1zm0 5h-8v1h8v-1zm-10.516-11.304l-.71-.696-2.553 2.607-1.539-1.452-.698.71 2.25 2.135 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304z"/></svg>
+                            </a>
+                </div>
+                
             </div>
-            <div>
-              <a href="doc/tableau_synthese_Girard_Antoine.pdf" target="_blank">Tableau de compétence</a>
+            <div class="content">
+                <div class="text">
+                    <p>Prenom :Antoine</p>
+                    <p>Nom : Girard</p>
+                    <p>Age : 19 ans</p>
+                    <p>Profession : Developpeur</p>
+                <div>
             </div>
-          </div>
         </div>
-      </div>      
     </div>
-  </main>
-</body>
+        </div>
+    </div>
+    <div class="apropos">
+        <div class="propos" id="aPropos">
+            <H1>A propos</H1>
+            <p style="text-align: center;">A l'age de mes 14 ans, soif de découvert et intéresser par les jeux vidéo flash, j'ai voulu 
+                coder moi aussi mon jeu. n'ayant aucune connaissance et ce qu'était flash, j'ai dû 
+                "mettre les mains dans le cambouis" et j'ai découvert le site Open Classroom.
+                j'ai commencer à découvrir le developpement.
+                Et que même si je ne finirais jamais mon jeu j'ai découvert une passion pour le code et ces multiples languages.
+                Je me suis donc orienter dans un bac Technologie STI2D SIN où j'ai découvert plus en profondeur le monde de 
+                l'informatique. voyant que ce baccalaureat me plaisait, j'ai su que le développement serait mon métier et même 
+                si les chemins seraient durs, j'arriverais.  et donc nous arrivons à Aujourd'hui étudiant en BTS SIO option SLAM.</p>
+        </div>
+    </div>
+    <div class="competence" id="Competances">
+        <H1>Mes competences</H1>
+        <div class="containerCompetence">
+            <div class="language">
+                <H2>Languages de Programation</H2>
+                <div class="languages">
+                    <article class="cards">
+                        <h3>Developpement Web</h3>
+                        <div class="ContainerCard">
+                            <img style="width: 40%;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6I0YyRjJGMjsiIGQ9Ik01MTIsMjU2YzAsODIuMzE3LTM4Ljg2LDE1NS41NjQtOTkuMjM0LDIwMi4zOTdDMzY5LjQ1NSw0OTIuMDAxLDMxNS4wNjgsNTEyLDI1Niw1MTINCgljLTU4LjUzNSwwLTExMi40NzMtMTkuNjQ0LTE1NS41OTYtNTIuNzA1QzM5LjM2MSw0MTIuNTE1LDAsMzM4Ljg1LDAsMjU2QzAsMTE0LjYxNSwxMTQuNjE1LDAsMjU2LDBTNTEyLDExNC42MTUsNTEyLDI1NnoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNFNjRDMTg7IiBkPSJNNDQxLjk5MiwxMTkuNDc0bC0yOS4yMjYsMzM4LjkyM0MzNjkuNDU1LDQ5Mi4wMDEsMzE1LjA2OCw1MTIsMjU2LDUxMg0KCWMtNTguNTM1LDAtMTEyLjQ3My0xOS42NDQtMTU1LjU5Ni01Mi43MDVMNzEuMTA1LDExOS40NzRINDQxLjk5MnoiLz4NCjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNGMzY1MTg7IiBwb2ludHM9IjI1Ni41NDYsMTUxLjI0OSAyNTYuNTQ2LDUwNC4xNjcgMzc4LjQ2LDQ2OS43NSA0MDUuNjU1LDE1MS4yNDkgIi8+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojRkZGRkZGOyIgcG9pbnRzPSIxNDAuOTAzLDE5NS41MjggMTUyLjg1OCwzMzcuMDkxIDMxMS43NjEsMzM3LjA5MSAzMDYuNTYyLDM5NS41NjggMjU2LjU0OSw0MDkuMTEyIA0KCTIwNC40NiwzOTQuNTIgMjAzLjE1MiwzNTguMDYxIDE1NC42MzEsMzU4LjA2MSAxNjAuNzA1LDQyOS45NDEgMjU2LjU0OSw0NTcuMDI4IDM1Mi4zOTIsNDI5Ljk0MSAzNjQuMjcsMjg5LjI5NSAxOTYuOTI4LDI4OS4yOTUgDQoJMTkyLjc3NSwyNDMuNDU2IDE5Mi43NzQsMjQzLjQ1NCAzNjguMjI2LDI0Mi41MzUgMzcyLjE5NCwxOTUuNTI4ICIvPg0KPHBvbHlnb24gcG9pbnRzPSIxNTEuMTU5LDE2Ljc5NiAxNTEuMTU5LDQxLjExNyAxMjcuOTIxLDQxLjExNyAxMjcuOTIxLDE2Ljc5NiAxMDYuMzAzLDE2Ljc5NiAxMDYuMzAzLDg2LjUxMyAxMjcuOTIxLDg2LjUxMyANCgkxMjcuOTIxLDYzLjgxNSAxNTEuMTU5LDYzLjgxNSAxNTEuMTU5LDg2LjUxMyAxNzIuNzc3LDg2LjUxMyAxNzIuNzc3LDE2Ljc5NiAiLz4NCjxwb2x5Z29uIHBvaW50cz0iMjQ5LjUyMSwxNi43OTYgMTgzLjA0NSwxNi43OTYgMTgzLjA0NSw0MS4xMTcgMjA0LjY2Myw0MS4xMTcgMjA0LjY2Myw4Ny4wNTUgMjI3LjkwMyw4Ny4wNTUgMjI3LjkwMyw0MS4xMTcgDQoJMjQ5LjUyMSw0MS4xMTcgIi8+DQo8cG9seWdvbiBwb2ludHM9IjM3My4yODQsNjQuODk1IDM3My4yODQsMTcuMzM3IDM1MC4wNDQsMTcuMzM3IDM1MC4wNDQsNjQuODk1IDM1MC4wNDQsODcuMDU1IDM3My4yODQsODcuMDU1IDQwNi43OSw4Ny4wNTUgDQoJNDA2Ljc5LDY0Ljg5NSAiLz4NCjxwb2x5Z29uIHBvaW50cz0iMzE0LjkxNCwxNy4zMzcgMjk4LjcwMiw0Mi4xOTcgMjgyLjQ4OCwxNy4zMzcgMjU5LjI0OSwxNy4zMzcgMjU5LjI0OSw4Ny4wNTUgMjgyLjQ4OCw4Ny4wNTUgMjgyLjQ4OCw1Mi40NjUgDQoJMjk4LjcwMiw3Ny4zMjcgMzE0LjkxNCw1Mi40NjUgMzE0LjkxNCw4Ny4wNTUgMzM4LjE1NCw4Ny4wNTUgMzM4LjE1NCwxNy4zMzcgIi8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+                            <img style="width: 40%;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6I0YyRjJGMjsiIGQ9Ik01MTIsMjU2YzAsODIuMzE3LTM4Ljg2LDE1NS41NjQtOTkuMjM0LDIwMi4zOTdDMzY5LjQ1NSw0OTIuMDAxLDMxNS4wNjgsNTEyLDI1Niw1MTINCglzLTExMy40NTUtMTkuOTk5LTE1Ni43NjYtNTMuNjAzQzM4Ljg2LDQxMS41NjQsMCwzMzguMzE3LDAsMjU2QzAsMTE0LjYxNSwxMTQuNjE1LDAsMjU2LDBTNTEyLDExNC42MTUsNTEyLDI1NnoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiMwMDZCQzA7IiBkPSJNNDQxLjk5MiwxMTkuNDc0bC0yOS4yMjYsMzM4LjkyM0MzNjkuNDU1LDQ5Mi4wMDEsMzE1LjA2OCw1MTIsMjU2LDUxMg0KCXMtMTEzLjQ1NS0xOS45OTktMTU2Ljc2Ni01My42MDNMNzAuMDA4LDExOS40NzRINDQxLjk5MnoiLz4NCjxwb2x5Z29uIHN0eWxlPSJmaWxsOiMwMDk2REM7IiBwb2ludHM9IjI1NS45OTcsMTUxLjMzOCAyNTUuOTk3LDUwNS4yOTYgMzc4LjI2OSw0NzAuNzc3IDQwNS41NDUsMTUxLjMzOCAiLz4NCjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBwb2ludHM9IjM2NC4wMzYsMjg5Ljc4NyAyNzUuODUsMjg5Ljc4NyAzNjcuOTk5LDI0Mi44OSAzNzEuOTgxLDE5NS43NDYgMTQwLjAxMywxOTUuNzQ2IA0KCTE0NC4wNzIsMjQzLjgxMSAyMzcuMTg5LDI0My44MTEgMTQ3Ljg0NSwyODguNDg0IDE1Mi4wMDIsMzM3LjcyMyAxNTIuMDAyLDMzNy43MjMgMzExLjM3NiwzMzcuNzIzIDMwNi4xNTIsMzk2LjM2NiAyNTUuOTk3LDQwOS45NSANCgkyMDMuNzUyLDM5NS4zMjEgMjAyLjQ0NiwzNTguNzUgMTUzLjc3OCwzNTguNzUgMTU5Ljg2Niw0MzAuODQ4IDI1NS45OTcsNDU4LjAxNSAzNTIuMTI3LDQzMC44NDggMzY0LjAzOSwyODkuNzc5ICIvPg0KPGc+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6IzIyMjEyMzsiIHBvaW50cz0iMTY1LjM1Miw2Ny4yMjQgMTY1LjM1MiwzMy43ODcgMjEzLjQxNywzMy43ODcgMjEzLjQxNywxNS42NzYgMTQ3LjkzNywxNS42NzYgDQoJCTE0Ny45MzcsODUuMzM1IDIxMy40MTcsODUuMzM1IDIxMy40MTcsNjcuMjI0IAkiLz4NCgk8cG9seWdvbiBzdHlsZT0iZmlsbDojMjIyMTIzOyIgcG9pbnRzPSIyNDEuNTQyLDQyLjkzIDI0MS41NDIsMzQuNTcgMjg5LjM0NywzNC41NyAyODkuMzQ3LDMzLjc4NyAyODkuMzQ3LDE1LjY3NiAyMjMuODY2LDE1LjY3NiANCgkJMjIzLjg2Niw1OC44NjQgMjcwLjc5OSw1OC44NjQgMjcwLjc5OSw2Ny4yMjQgMjIzLjg2Niw2Ny4yMjQgMjIzLjg2Niw4NS4zMzUgMjg5LjM0Nyw4NS4zMzUgMjg5LjM0Nyw2Ny4yMjQgMjg5LjM0Nyw0Mi45MyAJIi8+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6IzIyMjEyMzsiIHBvaW50cz0iMzE2LjI1Miw0Mi45MyAzMTYuMjUyLDM0LjU3IDM2NC4wNTYsMzQuNTcgMzY0LjA1NiwzMy43ODcgMzY0LjA1NiwxNS42NzYgMjk4LjU3NiwxNS42NzYgDQoJCTI5OC41NzYsNTguODY0IDM0NS41MDksNTguODY0IDM0NS41MDksNjcuMjI0IDI5OC41NzYsNjcuMjI0IDI5OC41NzYsODUuMzM1IDM2NC4wNTYsODUuMzM1IDM2NC4wNTYsNjcuMjI0IDM2NC4wNTYsNDIuOTMgCSIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+                            <img style="width: 40%;" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSItNjEgMCA1MTIgNTEyIiB3aWR0aD0iNTEycHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTM2Ni44OTg0MzggNTEyaC0zNDQuNDA2MjVjLTEyLjQyMTg3NiAwLTIyLjQ5MjE4OC0xMC4wNzAzMTItMjIuNDkyMTg4LTIyLjQ5MjE4OHYtNDY3LjAxNTYyNGMwLTEyLjQyMTg3NiAxMC4wNzAzMTItMjIuNDkyMTg4IDIyLjQ5MjE4OC0yMi40OTIxODhoMjcyLjgxNjQwNmw5NC4wNzgxMjUgODkuNDUzMTI1djQwMC4wNTQ2ODdjLjAwMzkwNiAxMi40MjE4NzYtMTAuMDY2NDA3IDIyLjQ5MjE4OC0yMi40ODgyODEgMjIuNDkyMTg4em0wIDAiIGZpbGw9IiNmNGY0ZjQiLz48cGF0aCBkPSJtMjk1LjMwODU5NCAwaC00MC40NDkyMTlsOTQuMDc4MTI1IDg5LjQ1MzEyNXY0MDAuMDU0Njg3YzAgMTIuNDIxODc2LTEwLjA2NjQwNiAyMi40OTIxODgtMjIuNDkyMTg4IDIyLjQ5MjE4OGg0MC40NDkyMTljMTIuNDIxODc1IDAgMjIuNDkyMTg4LTEwLjA3MDMxMiAyMi40OTIxODgtMjIuNDkyMTg4di00MDAuMDU0Njg3em0wIDAiIGZpbGw9IiNlOGU4ZTgiLz48cGF0aCBkPSJtMzQ4LjkzNzUgNTAuOTkyMTg4LTUzLjYyODkwNi01MC45OTIxODhoLTI3Mi44MTY0MDZjLTEyLjQyMTg3NiAwLTIyLjQ5MjE4OCAxMC4wNzAzMTItMjIuNDkyMTg4IDIyLjQ5MjE4OHYyOC41em0wIDAiIGZpbGw9IiNmNmQ4NjciLz48cGF0aCBkPSJtMjY1Ljc3NzM0NCA1MC45OTIxODhoODMuMTYwMTU2bC01My42Mjg5MDYtNTAuOTkyMTg4aC0yOS41MzEyNXptMCAwIiBmaWxsPSIjZTBjNTVlIi8+PHBhdGggZD0ibTI5NS4zMDg1OTQgMHY2Ni45NjA5MzhjMCAxMi40MjE4NzQgMTAuMDcwMzEyIDIyLjQ5MjE4NyAyMi40OTIxODcgMjIuNDkyMTg3aDcxLjU4OTg0NHptMCAwIiBmaWxsPSIjZGVkY2RkIi8+PHBhdGggZD0ibTAgMzY5LjUyNzM0NHYxMTkuOTgwNDY4YzAgMTIuNDIxODc2IDEwLjA3MDMxMiAyMi40OTIxODggMjIuNDkyMTg4IDIyLjQ5MjE4OGgzNDQuNDA2MjVjMTIuNDIxODc0IDAgMjIuNDkyMTg3LTEwLjA3MDMxMiAyMi40OTIxODctMjIuNDkyMTg4di0xMTkuOTgwNDY4em0wIDAiIGZpbGw9IiNmNmQ4NjciLz48cGF0aCBkPSJtMzQ4LjkzNzUgNDg5LjUwNzgxMmMwIDEyLjQyMTg3Ni0xMC4wNjY0MDYgMjIuNDkyMTg4LTIyLjQ5MjE4OCAyMi40OTIxODhoNDAuNDQ5MjE5YzEyLjQwNjI1IDAgMjIuNDkyMTg4LTEwLjA1MDc4MSAyMi40OTIxODgtMjIuNDkyMTg4di0xMTkuOTgwNDY4aC00MC40NDkyMTl6bTAgMCIgZmlsbD0iI2UwYzU1ZSIvPjxnIGZpbGw9IiM0OTU2NjMiPjxwYXRoIGQ9Im0xNjAuMTQ0NTMxIDQ3Ni4wMzEyNWMxNC40NTcwMzEgMCAyNi4xNzU3ODEtMTEuNDkyMTg4IDI2LjE3NTc4MS0yNS42NzU3ODF2LTM3LjY1MjM0NGMwLTMuMzk0NTMxLTIuNzUtNi4xNDQ1MzEtNi4xNDA2MjQtNi4xNDQ1MzEtMy4zOTA2MjYgMC02LjE0MDYyNiAyLjc1LTYuMTQwNjI2IDYuMTQ0NTMxdjM3LjY1MjM0NGMwIDE1Ljg0Mzc1LTIyLjYzMjgxMiAxOS40NDUzMTItMjcuMTgzNTkzIDMuNzUtLjczODI4MS0yLjU1MDc4MS0zLjA4NTkzOC00LjQxNDA2My01Ljg3NS00LjQxNDA2My00LjEwMTU2MyAwLTcuMDI3MzQ0IDMuOTg4MjgyLTUuODU5Mzc1IDcuOTAyMzQ0IDMuMjMwNDY4IDEwLjgzMjAzMSAxMy4yNSAxOC40Mzc1IDI1LjAyMzQzNyAxOC40Mzc1em0wIDAiLz48cGF0aCBkPSJtMjI3LjIxMDkzOCA0NjQuMjVjLTYuNzI2NTYzIDAtMTMuMzMyMDMyLTIuNDkyMTg4LTE5LjE3OTY4OC01LjQ2MDkzOC0zLjk1MzEyNS0yLjAxNTYyNC04LjYzMjgxMi44NzUtOC42MzI4MTIgNS4zMDA3ODIgMCAyLjIzMDQ2OCAxLjIzNDM3NCA0LjE3OTY4NyAzLjA1NDY4NyA1LjE5OTIxOCAyMi45Mzc1IDEyLjcyNjU2MyA1Mi4wNDI5NjkgNi43MTg3NSA1Mi4wNDI5NjktMTMuNzk2ODc0IDAtMTUuMjAzMTI2LTE0LjkwMjM0NC0xOC4zMjQyMTktMjcuNjkxNDA2LTIwLjY0MDYyNi04LjQ2ODc1LTEuNTM1MTU2LTE0LjE5NTMxMy0yLjMxNjQwNi0xNC4yMjI2NTctNy44OTQ1MzEtLjAxOTUzMS00LjY5MTQwNiA0LjA1NDY4OC05LjYyNSAxNC4zMjQyMTktOS42MjUgMTEuODY3MTg4IDAgMTcuMzAwNzgxIDUuNzgxMjUgMjAuOTk2MDk0IDUuNzgxMjUgNi4xMDU0NjggMCA4LjIxMDkzNy04LjIzMDQ2OSAyLjc4MTI1LTExLjEyNS0yNy4yMzQzNzUtMTQuNTIzNDM3LTUwLjM1NTQ2OS0yLjQ2NDg0My01MC4zODI4MTMgMTUuNDgwNDY5LS4wMjczNDMgMTYuMzQzNzUgMTYuMDM1MTU3IDE4Ljc2MTcxOSAyNi41MDM5MDcgMjAuNDcyNjU2IDkuNjcxODc0IDEuNTc4MTI1IDE1LjQwNjI1IDIuNjE3MTg4IDE1LjQ0OTIxOCA3Ljk0NTMxMy4wNjY0MDYgNy4wNTQ2ODctMTAuMjEwOTM3IDguMzYzMjgxLTE1LjA0Mjk2OCA4LjM2MzI4MXptMCAwIi8+PC9nPjwvc3ZnPg==" />
+                            <img style="width: 40%;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDQ4Mi4xMzkgNDgyLjEzOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDgyLjEzOSA0ODIuMTM5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBkPSJNNjkuODI2LDEwNS4wNzJjLTQuMDA0LDAtNi43MTMsMC4zOTYtOC4xMzIsMC43NzR2MjUuNjg5YzEuNjg3LDAuMzc4LDMuNzUxLDAuNTA0LDYuNTg4LDAuNTA0DQoJCWMxMC40NjQsMCwxNi44OTQtNS4yNzksMTYuODk0LTE0LjE4NUM4NS4xNzYsMTA5Ljg0OSw3OS42MjksMTA1LjA3Miw2OS44MjYsMTA1LjA3MnoiLz4NCgk8cGF0aCBkPSJNMjQ5LjE0OCwxMTcuODU0YzAtOC4wMDYtNS41NDktMTIuNzgyLTE1LjM1Mi0xMi43ODJjLTQuMDA0LDAtNi43MTUsMC4zOTYtOC4xMzMsMC43NzR2MjUuNjg5DQoJCWMxLjY3LDAuMzc4LDMuNzUsMC41MDQsNi41ODgsMC41MDRDMjQyLjY4NSwxMzIuMDM5LDI0OS4xNDgsMTI2Ljc2LDI0OS4xNDgsMTE3Ljg1NHoiLz4NCgk8cGF0aCBkPSJNMzU3LjE3LDBIMTYzLjUyMWMtMjguMjksMC01MS4zMTYsMjMuMDQxLTUxLjMxNiw1MS4zMTV2OS41MDRoLTg4LjQzYy0xMS40MjgsMC0yMC42OCw5LjI1MS0yMC42OCwyMC42Nzd2MTA1LjI5NQ0KCQljMCwxMS40MjYsOS4yNTIsMjAuNjc4LDIwLjY4LDIwLjY3OGg4OC40M3YyMjMuMzU1YzAsMjguMzA1LDIzLjAyNiw1MS4zMTUsNTEuMzE2LDUxLjMxNWgyNjQuMjIxDQoJCWMyOC4yNzUsMCw1MS4zMDEtMjMuMDEsNTEuMzAxLTUxLjMxNVYxMjEuNDQ5TDM1Ny4xNywweiBNOTYuNjgyLDEzNy45OGMtNi43MTUsNi4zMi0xNi42NDMsOS4xNTgtMjguMjczLDkuMTU4DQoJCWMtMi41ODYsMC00Ljg4Ny0wLjEyNy02LjcxNC0wLjM3OHYzMS4wOTRINDIuMjEzVjkyLjAzOWM2LjA2OC0xLjAyNCwxNC41OTUtMS43OTYsMjYuNTg5LTEuNzk2YzEyLjEyLDAsMjAuNzg4LDIuMzE3LDI2LjU4OSw2Ljk2Ng0KCQljNS41NDcsNC4zODEsOS4yOTcsMTEuNjE2LDkuMjk3LDIwLjEyNkMxMDQuNjg4LDEyNS44NDcsMTAxLjg1MSwxMzMuMDgsOTYuNjgyLDEzNy45OHogTTE2OS4zNjcsMTI0LjMwMVY5MC44ODloMTkuNjA3djg2Ljk2Ng0KCQloLTE5LjYwN3YtMzYuMzkxaC0zMi40MDJ2MzYuMzkxaC0xOS43MzFWOTAuODg5aDE5LjczMXYzMy40MTJIMTY5LjM2N3ogTTQyNy43NDIsNDUwLjcxM0gxNjMuNTIxDQoJCWMtMTAuOTUzLDAtMTkuODc0LTguOTItMTkuODc0LTE5Ljg4OVYyMDcuNDY5aDEzOS43MzFjMTEuNDI2LDAsMjAuNjc2LTkuMjUyLDIwLjY3Ni0yMC42NzhWODEuNDk2DQoJCWMwLTExLjQyNi05LjI1LTIwLjY3Ny0yMC42NzYtMjAuNjc3SDE0My42NDh2LTkuNTA0YzAtMTAuOTM4LDguOTItMTkuODU4LDE5Ljg3NC0xOS44NThsMTgxLjg4OS0wLjE4OXY2Ny4yMzQNCgkJYzAsMTkuNjM3LDE1LjkzNCwzNS41ODYsMzUuNTg4LDM1LjU4Nmw2NS44NjMtMC4xODlsMC43NCwyOTYuOTI1QzQ0Ny42MDEsNDQxLjc5Myw0MzguNjk1LDQ1MC43MTMsNDI3Ljc0Miw0NTAuNzEzeg0KCQkgTTIwNi4xODUsMTc3Ljg1NVY5Mi4wMzljNi4wNTEtMS4wMjQsMTQuNTk0LTEuNzk2LDI2LjU3Mi0xLjc5NmMxMi4xMzMsMCwyMC43NzEsMi4zMTcsMjYuNjAyLDYuOTY2DQoJCWM1LjU0OSw0LjM4MSw5LjI2OCwxMS42MTYsOS4yNjgsMjAuMTI2YzAsOC41MTItMi44MzYsMTUuNzQ1LTcuOTc1LDIwLjY0NWMtNi43MTMsNi4zMi0xNi42NzQsOS4xNTgtMjguMjc1LDkuMTU4DQoJCWMtMi41ODQsMC00LjkxNi0wLjEyNy02LjcxMy0wLjM3OHYzMS4wOTRIMjA2LjE4NXoiLz4NCgk8cGF0aCBkPSJNMjk2LjAxOSwyODYuOTY1YzAtNC43MTMtMi40MTItOS4xMTEtNi4zODMtMTEuNjQ3Yy0zLjk3My0yLjUzOS04Ljk4NC0yLjg3LTEzLjI1Ni0wLjg4M2wtNzYuNTMxLDM1LjU1NQ0KCQljLTYuMjg5LDIuOTE2LTEwLjMyMiw5LjIzNi0xMC4zMjIsMTYuMTg2YzAsNi45MzUsNC4wMzMsMTMuMjU1LDEwLjMyMiwxNi4xNzFsNzYuNTMxLDM1LjU3YzQuMjcyLDEuOTg1LDkuMjY4LDEuNjU0LDEzLjI1Ni0wLjg4Mw0KCQljMy45NzEtMi41MzcsNi4zODMtNi45MzQsNi4zODMtMTEuNjYyYzAtNS40ODQtMy4yNDgtMTAuNDQ5LTguMjc1LTEyLjY1NGwtNjAuNTgyLTI2LjU1N2w2MC41ODItMjYuNTQxDQoJCUMyOTIuNzcxLDI5Ny40MTIsMjk2LjAxOSwyOTIuNDQ4LDI5Ni4wMTksMjg2Ljk2NXoiLz4NCgk8cGF0aCBkPSJNMzYwLjM4NSwyNDguMjg4Yy04Ljk1MywwLTE3LjA2OCwxLjU0NS0yMy43MDUsMy43MzRjLTYuMDM3LDIuMDAxLTkuMzU5LDguNDY0LTcuNDcxLDE0LjUzMQ0KCQljMS44OTMsNi4wMzYsOC4yNDQsOS40ODgsMTQuMzI2LDcuNzdjMy4zMjYtMC45Myw2Ljc2Mi0xLjQ0OSw5Ljg4My0xLjQ0OWMxMC4yNDQsMC40MDksMTQuOTczLDUuMTM5LDE0Ljk3MywxMi4zMDkNCgkJYzAsNi45ODEtNS4zMjgsMTMuNTM5LTExLjg5OCwyMS4zMjNjLTkuMjM2LDExLjA4LTEyLjcxOSwyMS43NDktMTIuMDksMzIuMTgzbDAuMDY0LDEuNzk4YzAuMDc2LDEuOTg1LDEuNzAxLDMuNTQ2LDMuNjg4LDMuNTQ2DQoJCWgyMC4wMzFjMi4wMzMsMCwzLjY4OC0xLjY1NiwzLjY4OC0zLjY4OGMtMC4yMDUtOS4yMzYsMi44NTQtMTcuMjI3LDEwLjQ0OS0yNS42NDNjNy44MDMtOC42MjEsMTcuNDMtMTguODY0LDE3LjQzLTM0LjQzNg0KCQlDMzk5Ljc1MiwyNjMuMjQ0LDM4Ny40NDMsMjQ4LjI4OCwzNjAuMzg1LDI0OC4yODh6Ii8+DQoJPHBhdGggZD0iTTM1Ny41MjksMzUzLjY2MmMtMTAuNjY4LDAtMTguMjY0LDcuODAxLTE4LjI2NCwxOC42NTljMCwxMC42NjksNy4zOTEsMTguNjYxLDE4LjI2NCwxOC42NjENCgkJYzExLjA2NiwwLDE4LjQ1Ny03Ljk5MiwxOC40NTctMTguNjYxQzM3NS43NSwzNjEuNDYzLDM2OC41OTYsMzUzLjY2MiwzNTcuNTI5LDM1My42NjJ6Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+                        </div>    
+                    </article>
+
+                    <article class="cards">
+                        <h3>FrameWork</h3>
+                        <div class="ContainerCard">
+                            <img style="width: 40%;" src="./image/bootstrap.svg"/>
+                            <img style="width: 40%;" src="./image/symfony.svg"/>
+                        </div>    
+                    </article>
+
+                    <article class="cards">
+                        <h3>Autre Language</h3>
+                        <div class="ContainerCard">
+                            <img style="width: 40%;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBpZD0iT3V0TGluZSIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48cGF0aCBkPSJNMzQ5LjY1NywxOC4zNDNBOCw4LDAsMCwwLDM0NCwxNkgxMjBBNTYuMDYzLDU2LjA2MywwLDAsMCw2NCw3MlY0NDBhNTYuMDYzLDU2LjA2MywwLDAsMCw1Niw1NkgzOTJhNTYuMDYzLDU2LjA2MywwLDAsMCw1Ni01NlYxMjBhOCw4LDAsMCwwLTIuMzQzLTUuNjU3Wk0zNTIsNDMuMzEzLDQyMC42ODcsMTEySDM5MmE0MC4wNDUsNDAuMDQ1LDAsMCwxLTQwLTQwWk0xMjAsMzJIMzM2VjcyYTU2LjA2Myw1Ni4wNjMsMCwwLDAsNTYsNTZoNDBWMzUySDgwVjcyQTQwLjA0NSw0MC4wNDUsMCwwLDEsMTIwLDMyWk0zOTIsNDgwSDEyMGE0MC4wNDUsNDAuMDQ1LDAsMCwxLTQwLTQwVjM2OEg0MzJ2NzJBNDAuMDQ1LDQwLjA0NSwwLDAsMSwzOTIsNDgwWiIvPjxwYXRoIGQ9Ik0yMjQsNDAwYTEwLjY3NSwxMC42NzUsMCwwLDEsNC41ODgsMS4wNTgsOCw4LDAsMCwwLDYuODI0LTE0LjQ3M0EyNi41ODcsMjYuNTg3LDAsMCwwLDIyNCwzODRjLTE3LjY0NSwwLTMyLDE3Ljk0NC0zMiw0MHMxNC4zNTUsNDAsMzIsNDBhMjYuNTg3LDI2LjU4NywwLDAsMCwxMS40MTItMi41ODUsOCw4LDAsMCwwLTYuODI0LTE0LjQ3M0ExMC42NzUsMTAuNjc1LDAsMCwxLDIyNCw0NDhjLTguNjczLDAtMTYtMTAuOTktMTYtMjRTMjE1LjMyNyw0MDAsMjI0LDQwMFoiLz48cGF0aCBkPSJNMzIwLDQwOGE4LDgsMCwwLDAtOC04di04YTgsOCwwLDAsMC0xNiwwdjhIMjgwdi04YTgsOCwwLDAsMC0xNiwwdjhhOCw4LDAsMCwwLDAsMTZ2MTZhOCw4LDAsMCwwLDAsMTZ2OGE4LDgsMCwwLDAsMTYsMHYtOGgxNnY4YTgsOCwwLDAsMCwxNiwwdi04YTgsOCwwLDAsMCwwLTE2VjQxNkE4LDgsMCwwLDAsMzIwLDQwOFptLTI0LDI0SDI4MFY0MTZoMTZaIi8+PHBhdGggZD0iTTEzNiwyNDBoNDB2NDBhOCw4LDAsMCwwLDgsOGg4OHY4YTgsOCwwLDAsMCw4LDhoOTZhOCw4LDAsMCwwLDgtOFYyMDBhOCw4LDAsMCwwLTgtOEgyODBhOCw4LDAsMCwwLTgsOHY3MkgxOTJWMjQwaDQwYTgsOCwwLDAsMCw4LThWMTM2YTgsOCwwLDAsMC04LThIMTM2YTgsOCwwLDAsMC04LDh2OTZBOCw4LDAsMCwwLDEzNiwyNDBabTE1Miw0OFYyNDBoODB2NDhabTgwLTgwdjE2SDI4OFYyMDhaTTE0NCwyMjRWMTc2aDgwdjQ4Wm04MC04MHYxNkgxNDRWMTQ0WiIvPjxwYXRoIGQ9Ik0yMDAsMTkySDE2OGE4LDgsMCwwLDAsMCwxNmgzMmE4LDgsMCwwLDAsMC0xNloiLz48cGF0aCBkPSJNMzQ0LDI1NkgzMTJhOCw4LDAsMCwwLDAsMTZoMzJhOCw4LDAsMCwwLDAtMTZaIi8+PC9zdmc+Cg==" />
+                            <img style="width: 40%;" src="./image/sql.svg"/>
+                        </div>    
+                    </article>
+                </div>
+                
+            </div>
+            
+            <div class="outil">
+                <h2>Outils</h2>
+                <div class="outils">
+                    <article class="cards">
+                        <h3>Système d'exploitation</h3>
+                        <div class="ContainerCard">
+                            <img style="width: 40%;" src="./image/debian-seeklogo.com.svg"/>
+                             <img style="width: 40%;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyLjAwMSA1MTIuMDAxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIuMDAxIDUxMi4wMDE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM1NzlBREQ7IiBkPSJNMjQ2Ljk4NCwzOC44MzdjOTAuNTEyLTE0Ljc3OCwxNzAuNjY1LTI1LjkyMiwyNjAuODk3LTM4LjgwNGMxLjk1Ny0wLjI4LDMuNzE3LDEuMjM4LDMuNzE3LDMuMjE0DQoJCWwwLDB2MjM2LjQzN2MwLDEuNzkyLTEuNDQ4LDMuMjQ0LTMuMjQsMy4yNDVjLTg5LjYzMywwLjA0My0xODEuMDA5LDEuODI4LTI3MC42NDEsMS44NzFjLTEuNzk2LDAuMDAxLTMuMjQ5LTEuNDU3LTMuMjQ5LTMuMjUyDQoJCVY1OS44NFY0My40OTljMC0xLjYwOSwxLjE3OS0yLjk3NiwyLjc3MS0zLjIxM0wyNDYuOTg0LDM4LjgzN3oiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojNTc5QUREOyIgZD0iTTEzLjYxMiw3MC40MTFMMjA2LjQ1LDQ0LjkyOGMxLjk0Ni0wLjI1OCwzLjY3NCwxLjI1NywzLjY3NCwzLjIydjE5My40MDkNCgkJYzAsMS43OTItMS40NTYsMy4yNDMtMy4yNDcsMy4yNDRjLTY4LjkwMywwLjA1NC0xMzYuMDc1LDEuODE0LTIwMy4yMTksMS44N2MtMS43OTcsMC4wMDEtMy4yNTUtMS40NTgtMy4yNTUtMy4yNTRWODQuOTc5Vjc1LjMNCgkJYzAtMS41OTUsMS4xNTgtMi45NTQsMi43MzQtMy4yMDdMMTMuNjEyLDcwLjQxMXoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojNTc5QUREOyIgZD0iTTMuNjU5LDI2Ny4yNzJjNjcuMTE3LDAuMDU2LDEzNC4yNjIsMS43ODUsMjAzLjEzOCwwLjA4NGMxLjgyMy0wLjA0NSwzLjMyOCwxLjQxNywzLjMyOCwzLjI0MQ0KCQl2MTk1LjJjMCwxLjk2My0xLjczMywzLjQ3Ny0zLjY3OSwzLjIyMWMtNjguOTAzLTkuMDc1LTEzNi4wNzgtMTguMTQ4LTIwMy4yMjktMjcuMjIzYy0xLjYxMS0wLjIxOC0yLjgxMy0xLjU5NC0yLjgxMy0zLjIxOQ0KCQl2LTE2OC4wNUMwLjQwNCwyNjguNzMsMS44NjIsMjY3LjI3MSwzLjY1OSwyNjcuMjcyeiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM1NzlBREQ7IiBkPSJNMjQ2Ljk4NCwyNjkuMTQ0aDI2MS4zNjVjMS43OTQsMCwzLjI0OSwxLjQ1NSwzLjI0OSwzLjI0OXYyMjguOTQydjcuNDIyDQoJCWMwLDItMS43ODcsMy41Mi0zLjc2MSwzLjIwMWMtODkuNjE5LTE0LjUyNS0xODAuOTczLTI1LjU1NC0yNzAuNTc5LTM4LjMxM2MtMS42MDItMC4yMjgtMi43OTEtMS42MDEtMi43OTEtMy4yMlYyNzIuMzkyDQoJCWMwLTEuNzk0LDEuNDU1LTMuMjQ5LDMuMjQ5LTMuMjQ5TDI0Ni45ODQsMjY5LjE0NEwyNDYuOTg0LDI2OS4xNDR6Ii8+DQo8L2c+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojNDk4N0NFOyIgZD0iTTI1NS4wMzksMjQxLjQ4NVY1Ni4yNVYzOS41OTJjMC0wLjg0LDAuMzE4LTEuNjEyLDAuODQ0LTIuMjAyYy0yLjk1NSwwLjQ3OC01LjkyMSwwLjk2LTguODk4LDEuNDQ3DQoJCWwtOS43NDcsMS40NDljLTEuNTkyLDAuMjM3LTIuNzcxLDEuNjAzLTIuNzcxLDMuMjEzdjE2LjM0djE4MS43MDljMCwxLjc5NiwxLjQ1NCwzLjI1MywzLjI0OSwzLjI1Mg0KCQljNi42ODMtMC4wMDMsMTMuMzk0LTAuMDMzLDIwLjA5Ni0wLjA1NEMyNTYuMjQsMjQ0LjQ4NywyNTUuMDM5LDI0My4xMzEsMjU1LjAzOSwyNDEuNDg1eiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM0OTg3Q0U7IiBkPSJNMjAuOTc1LDI0My4zNDRWODEuMjgydi05LjkwMWMwLTAuNzY0LDAuMjY4LTEuNDY5LDAuNzA5LTIuMDM2bC04LjA3MiwxLjA2NmwtMTAuNDc0LDEuNjgNCgkJYy0xLjU3NiwwLjI1My0yLjczNCwxLjYxMi0yLjczNCwzLjIwN3Y5LjY4djE1OC40MzhjMCwxLjc5NywxLjQ1OSwzLjI1NiwzLjI1NSwzLjI1NGM2LjY1LTAuMDA2LDEzLjMwMS0wLjAzOSwxOS45NTMtMC4wNzUNCgkJQzIyLjEwNywyNDYuMjc4LDIwLjk3NSwyNDQuOTQzLDIwLjk3NSwyNDMuMzQ0eiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM0OTg3Q0U7IiBkPSJNMjA4LjU3NiwyNjcuODQyYy0wLjUxNy0wLjMxOC0xLjEyNi0wLjUwMi0xLjc4LTAuNDg2bDAsMEwyMDguNTc2LDI2Ny44NDJ6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzQ5ODdDRTsiIGQ9Ik0yMC45NzUsNDQ0LjAxOVYyNzAuNjNjMC0xLjYzMywxLjE2OC0yLjk5MiwyLjcxNC0zLjI5M2MtNi42NzgtMC4wMzQtMTMuMzU1LTAuMDU5LTIwLjAzMS0wLjA2NQ0KCQljLTEuNzk2LTAuMDAyLTMuMjU1LDEuNDU3LTMuMjU1LDMuMjU0djE2OC4wNDljMCwxLjYyNiwxLjIwMiwzLjAwMSwyLjgxNCwzLjIxOWM1LjkyNCwwLjgwMSwxMS44NSwxLjYwMSwxNy43NzYsMi40MDENCgkJQzIwLjk4OCw0NDQuMTM2LDIwLjk3NSw0NDQuMDgsMjAuOTc1LDQ0NC4wMTl6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzQ5ODdDRTsiIGQ9Ik0yNTUuMDM5LDQ3NC43MDVWMjcyLjQ2MWMwLTEuODMyLDEuNDg2LTMuMzE4LDMuMzE4LTMuMzE4aC0xMS4zNzJoLTkuMjY5DQoJCWMtMS43OTQsMC0zLjI0OCwxLjQ1NS0zLjI0OCwzLjI0OHYxOTguMDMzYzAsMS42MTgsMS4xODgsMi45OTEsMi43OTEsMy4yMmM2LjA0MiwwLjg2MSwxMi4wOTQsMS43MTIsMTguMTUxLDIuNTU4DQoJCUMyNTUuMTc4LDQ3NS43NDksMjU1LjAzOSw0NzUuMjQzLDI1NS4wMzksNDc0LjcwNXoiLz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K"/>
+                        </div>    
+                    </article>
+                    <article class="cards">
+                        <h3>Logiciel</h3>
+                        <div class="ContainerCard">
+                            <img style="width: 40%;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGNpcmNsZSBzdHlsZT0iZmlsbDojNkU2NEMzOyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojNTA0NkFGOyIgZD0iTTQwNS4yMSwxMjkuNDA1bC03MC42NDYtMjguNTQ3bC0xMjQuNDQsMTIwLjU4MWwtNzUuMTgzLTU3LjAzNWwtMjguNTE4LDE0LjI1OWwwLjM2NiwxNTAuNjc0DQoJbDE4MC43MywxODAuNzNDNDE0LjAzMiw0OTQuNTMyLDUxMiwzODYuNzEyLDUxMiwyNTZjMC02Ljk0Ny0wLjI4Ny0xMy44MjctMC44My0yMC42MzVMNDA1LjIxLDEyOS40MDV6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTQwNS4yMSwxMjkuNDA1bC03MC42NDYtMjguNTQ3bC0xMjQuNDQsMTIwLjU4MWwtNzUuMTgzLTU3LjAzNWwtMjguNTE4LDE0LjI1OWwwLjM2NiwxNTAuNjc0DQoJbDI4LjUxOCwxNC4yNTlsNzUuMTgzLTU3LjAzNWwxMjQuNDQsMTIwLjU4MWw3MC42NDYtMjguNTQ3TDQwNS4yMSwxMjkuNDA1eiBNMTQyLjQzNywyODUuOTEzdi02My44MjVMMTc3LjcxOCwyNTRoMC4zNjYNCglMMTQyLjQzNywyODUuOTEzeiBNMzI3LjQ3NywzMDcuMTM5TDI1Ni41NDksMjU0aC0wLjM2Nmw3MS4yOTQtNTMuMTM5TDMyNy40NzcsMzA3LjEzOUwzMjcuNDc3LDMwNy4xMzl6Ii8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+                            <img style="width: 40%;" src="./image/visual-studio-code-seeklogo.com.svg"/>
+                            <img style="width: 50%;" src="./image/mysql.svg"/>
+                            <img style="width: 50%;" src="./image/vmware.png"/>
+                        </div>    
+                    </article>
+
+                    <article class="cards">
+                        <h3>Autre</h3>
+                        <div class="ContainerCard">
+                            <img style="width: 40%;" src="./image/github.png" />
+                            <img style="width: 50%;" src="./image/office.png"/>
+                            <img style="width: 45%;" src="./image/wamp.png"/>
+                        </div>    
+                    </article>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+    <div class="outil">
+        <h2>Autre Compétences</h2>
+        <div class="outils">
+            <article class="cards">
+                <h3>Divers</h3>
+                <div class="ContainerCard">
+                    <p>Méthode Agile</p>
+                    <p>Etablir un cahier des charges, une documentation</p>
+                    <p>Création de Machines virtuelles (windows, Debian, Ubuntu)</p>
+                </div>    
+            </article>
+
+            <article class="cards">
+                <h3>Langues</h3>
+                <div class="ContainerCard">
+                    <img style="width: 65%;" src="./image/drapeauFr.svg.png"/>
+                    <img style="width: 65%;" src="./image/drapeauAnglais.png"/>
+                </div>    
+            </article>
+
+        </div>
+    </div>
+    <div class="experience" id="realisation">
+        <div class="parcour">
+            <h2>Parcours scolaire</h2>
+            <div class="parcours">
+                <div class="scolaires">
+                    <div class="description">
+                        <h3>BTS SIO option : SLAM (2019-en cours)</h3>
+                        <p>en deuxième année du Brevet de Technicien Supérieur Services Informatiques aux Organisations en option Solutions Logicielles et Applications Métiers</p>
+                        <p><a href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers">documentation</a></p>
+                    </div>
+                    <div class="ecole">
+                        <img style="width: 70%;" src="./image/SaintMichel.svg"/>
+                    </div>
+                </div>
+                <div class="scolaires">
+                    <div class="description">
+                        <h3>Baccalauréat STI2D SIN  (2017-2019)</h3>
+                        <p>Obtention du baccalauréat Sciences et technologie de l'industrie et du développement durable option Système d'Information et Numérique - Mention Assez Bien
+                        </p>
+                        <p><a href="https://oniseptv.onisep.fr/onv/bac-techno-sti2d-specialite-systeme-dinformation-et-numerique-sin">Documentation</a></p>
+                    </div>
+                    <div class="ecole">
+                        <img src="./image/lachenal.png"/>
+                    </div>
+                </div>
+
+                <div class="scolaires">
+                    <div class="description">
+                        <h3>Brevet</h3>
+                        <p>Obtention du brevet - Mention Assez Bien
+                        </p>
+                    </div>
+                    <div class="ecole">
+                        <img src="./image/lasalle.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parcour">
+            <h2>Projets</h2>
+            <div class="parcours">
+                <div class="scolaires">
+                    <div class="description">
+                        <h3>Projet Personnels Encadrés (en cours)</h3>
+                        <p>Réalisation d'un site web pour tablette, avec la posibilité de prendre des photos et de les sauvegardes dans une base de données
+                            avec une api, qui a été créer avec <a href="https://api-platform.com/">api Platform</a> et l'utilisation du framework <a href="https://symfony.com/">Symfony</a>. 
+                        </p>
+                    </div>
+                    <div class="ecole">
+                        <img style="width: 60%;" src="./image/nomDisponible.png"/>
+                    </div>
+                </div>
+                <div class="scolaires">
+                    <div class="description">
+                        <h3>Stage</h3>
+                        <p>Etude et démonstration de faisabilité de différentes technologies pour l'utilisation de l'api de GLPI 
+                            (api avec php et js & api avec vba)</p>
+                    </div>
+                    <div class="ecole">
+                        <img style="width: 60%;" src="./image/glpi.png"/>
+                    </div>
+                </div>
+                <div class="scolaires">
+                    <div class="description">
+                        <h3>Projet Personnels Encadrés (2020)</h3>
+                        <p>Réalisation d'un logiciel pour une entreprise fictive avec un cahier des charges, réaliser en WPF avec l'utilisation d'une base de données.</p>
+                    </div>
+                    <div class="ecole">
+                        <img style="width : 60%;"src="./image/ppe2.PNG"/>
+                    </div>
+                </div>
+                <div class="scolaires">
+                    <div class="description">
+                        <h3>Projet terminal Baccalauréat (2019)</h3>
+                        <p>Réalisation d'une interface pour un Miroir Connecter avec l'utilisation des languages du web (html, css, php, js), 
+                            l'utilisation d'une api méto et connecter à une Rasberry</p>
+                    </div>
+                    <div class="ecole">
+                        <img style="width : 60%;"src="./image/sin.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="titre" id="veilleTechnologie">Veille Technologie</h2>
+    <div class="outilVeille" >
+        <div class="outilsVeille">
+            <H2>Organisation d'une veille technologie</H2>
+            <ul>
+                <li>astuces pour faire des <a href="https://digitiz.fr/blog/tips-et-astuces-bien-utiliser-google/">recherches avancées</a></li>
+                <li>Recherche  d'article via google actualité </li>
+                <li>Découverte de site spécialisé dans le sujet de veille technologie</li>
+                <li>s'informer sur les actualités de la veille choisis</li>
+            </ul>
+            <H5>outils utiliser</H5>
+            <div class="outils">
+                <img width="25%" src="./image/googleActual.webp"/>
+                <img width="25%" src="./image/twitter.png"/>
+                <img width="25%" src="./image/logoYoutube.png"/>
+            </div>
+        </div>
+    </div>
+    <div class="VeilleTechno">
+        <div class="containerVT">
+            <H3>Veille technologie : DeepFake</H3> 
+            <img style="width : 75%;" src="./image/Obama.gif"/>
+            <div class="text">
+                <h4>Qu'est ce que c'est ?</h4>
+                <p>Le deepfake (hypertrucage), est une technique de synthèse d'images basée sur l'intelligence artificielle</p>
+                <p>Deepfake est la fusion de deep learning(technique d'intelligence artificielle) et de fake(faux)</p>
+                <div class="outils">
+
+                </div>
+                    <p>l'apparition du Deepfake aux grand public dates de 2016.</p>
+                    <p><a href="https://www.youtube.com/watch?v=I3l4XLZ59iw">Voici</a> la présentation du premier deepfake audio par Adobe Audio.</p>
+                    </br>
+                    <H5><a href="https://www.windows8facile.fr/comment-creer-deepfake/"/>Réalisation de deepfake video :</a></h5>
+                    <ul style="list-style: none;">                    
+                        <li>il faut une vidéo de base</li>
+                        <li>il faut une bank de données avec plusieurs centaines voir millier de photos d'une personne</li>
+                        <li>utilisation d'un logiciel pour créer des deepfake <a href="https://www.online-tech-tips.com/cool-websites/7-best-deepfake-apps-and-websites/">ici</a></li>
+                        <li>le logiciel va s'appuyer sur le deep learning qui va reconstitue les traits d'un visage avec les photos de la personne</li>
+                        <li>par la suite elle va projeter le visage créer sur la <a href="https://www.youtube.com/watch?v=wq-kmFCrF5Q">vidéo</a></li>
+                    </ul>
+                    </br>
+                    <H5>Le problème du deepfake</H5>
+                    <ul style="list-style: none;"> 
+                        <LI><a href="https://www.youtube.com/watch?v=ERQlaJ_czHU">fakeNews</a></LI>
+                        <img style="width :30%;" src="./image/fakenew.png"/>
+
+                        <LI style="margin-top: 3%;"> <a href="https://www.bbc.com/news/technology-56404038">Cyberharcèlement</a></LI>
+                        <img style="width: 30%;" src="./image/cyberharcelement.PNG"/>
+                    </ul>
+                    <H5>comment Lutter contre le deepfake ?</H5>
+                    <ul style="list-style: none;">
+                        <li><a href="https://owdin.live/2018/09/07/pour-detecter-les-algorithmes-deepfake-la-meilleure-technique-le-clignement-des-yeux/">Clignement des yeux</a></li>
+                        <img style="width: 30%;" src="./image/clignementyeux.gif"/>
+                        <li><a href="https://siecledigital.fr/2020/06/15/le-deepfake-detection-challenge-de-facebook-donne-deja-de-premiers-resultats/">Facebook Challenge</a></li>
+                        <img style="width: 30%;" src="./image/deepfake-detection-facebook.jpg"/>
+
+                        <li style="margin-top: 3%;"><a href="https://www.futura-sciences.com/tech/actualites/deepfake-microsoft-lance-outil-debusquer-deepfakes-82763/">logiciel Microsoft</a></li>
+
+                    </ul>
+            </div>
+        </div>
+        <div class="entredeux">
+
+        </div>
+        <div class="containerVT">
+            <H3>Veille technologie : CyberSécuriter pour les utilisateurs ?</H3>
+            <img style="width: 50%;" src="./image/cybersecuriter.png">
+            <div class="text">
+                <h4>Comment un utilisateur peut-il protéger ces données ?</h4>
+
+                <img style="width: 45%;" src="./image/Password Tips.png">
+
+                <p>une <a href="https://www.cnil.fr/fr/generer-un-mot-de-passe-solide">méthode</a> pour concevoir son mot de passe.</p>             
+
+                <p>Pour savoir si son mot de passe est fort alors on peut utiliser un <a href="https://password.kaspersky.com/fr/">testeur de mot de passe </a> , il permet de savoir 
+                si son mots de passe est résistant et s'il se trouve dans une base de données ayant fait l'objet d'une fuite.</p>
+                
+                <p><a href="https://blog.mozilla.org/firefox/fr/disney-mots-de-passe/">Lien :</a></p>
+                <img style="width: 30%;" src="./image/disneypassword.jpg">
+
+                <h4 style="margin-top: 5%;">Comment un utilisateur peut-il savoir quand ces données ont été volé ?</h4>
+                
+                
+
+                <p>Pour savoir si des informations a nous utilisateur ont été voler nous pouvons le savoir avec différents liens :</p>
+                <ul style="list-style: none;">
+                    <li> <a href="https://haveibeenpwned.com/">pwned</a>
+                        </br>
+                        <img style="width: 30%;" src="./image/pwned.jpg">
+                    </li>
+                    <li>
+                    </br>   
+                        <a href="https://support.mozilla.org/fr/kb/firefox-monitor">Firefox Monitor</a>
+                        </br>
+                        <img style="width: 30%;" src="./image/firefox-monitor.png"/>
+                    </li>
+                    <li></li>
+                </ul>
+
+                <p>D'autres site pour s'informer des breach de données</p>
+                <ul style="list-style: none;">
+                    <li> <a href="https://www.datasecuritybreach.fr/">data security breach</a> </li>
+                    <li> <a href="https://www.zataz.com/?s=fuite">zataz</a></li>
+                    <li></li>
+                </ul>
+                <h4>Breach de données</h4>
+                <a href="https://www.zataz.com/deux-millions-clients-yves-rocher-blackmarket/"><img style="width: 30%;" src="./image/fuitedonne.PNG"/></a>
+
+            </div>
+        </div>
+    </div>
+    </body>
 </html>
+
+
+<script>
+    document.getElementById("clickMe").onclick = function () {
+      swal({
+        title: "antoine.girard666@gmail.com",
+        
+  });
+      //let bar = confirm('Voullez vous gardez cette photo');
+      //console.log(bar);
+       };
+  </script>
